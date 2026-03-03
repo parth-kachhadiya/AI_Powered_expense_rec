@@ -383,9 +383,3 @@ It combines:
 The system is modular, extensible, and ready for further intelligence expansion.
 
 ---
-
-## Author
-
-Built with a focus on ML/DL systems design and production-level architecture thinking.
-
----
