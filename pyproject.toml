@@ -1,0 +1,13 @@
+[project]
+name = "ai-expense-intelligence"
+version = "0.1.0"
+description = "AI Powered Expense Intelligence MCP Server"
+requires-python = ">=3.11"
+
+dependencies = [
+    "fastmcp",
+    "pandas",
+    "numpy",
+    "statsmodels",
+    "scikit-learn",
+]
