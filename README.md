@@ -58,8 +58,12 @@ Structured JSON Output
 ```
 expense_ai/
 │
+├── data/
+|   ├── expense.db
+|
 ├── database/
 │   ├── connection.py
+|   ├── init_db.py
 │   ├── category_repository.py
 │   ├── transaction_repository.py
 │   ├── forecast_model_repository.py
@@ -68,19 +72,35 @@ expense_ai/
 │   ├── expense_engine.py
 │   ├── exceptions.py
 │
-├── analytics/
-│   ├── analytics_service.py
+├── intelligence/
+|   ├── forecast_model_service.py
+|   ├── prediction_service.py
+|   ├── rule_engine.py
+|   ├── summary_service.py
 │   ├── trend_service.py
 │
-├── forecasting/
-│   ├── prediction_service.py
-│   ├── model_registration.py
-│
+├── logs/
+|   ├── app.log
+|
 ├── mcp/
-│   ├── server.py
-│   ├── transaction_tools.py
-│   ├── analytics_tools.py
-│   ├── forecast_tools.py
+|   ├── analytics_tools.py
+|   ├── forecast_tools.py
+|   ├── server.py
+|   ├── transaction_tools.py
+|
+├── models/
+|   ├── expense/
+|   |   ├── expense_2025-12-01.pkl
+|   |   ├── expense_2026-02-01.pkl
+|   |
+|   ├── income/
+|   |   ├── income_2025-12-01.pkl
+|   |   ├── income_2026-02-01.pkl
+|   |
+|   ├── net_cashflow/
+|
+├── utils/
+|   ├── logger.py
 │
 ├── main.py (CLI testing interface)
 ```
